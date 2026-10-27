@@ -8,8 +8,12 @@ metadata:
 
 # Onboarding
 
-Before proceeding, let the user know that the MCP server is currently in preview and they may need to request access by visiting https://docs.datadoghq.com/bits_ai/mcp_server/
+The Datadog MCP server is generally available. Before proceeding, let the user know what it needs:
+- An organization admin must allow MCP access in Organization Settings.
+- The user's Datadog role needs MCP Server permissions (the Standard Role has them by default; custom roles need `mcp_read` and/or `mcp_write`).
+- Datadog government sites (`app.ddog-gov.com`, `us2.ddog-gov.com`) are not supported.
 
+Setup details: https://docs.datadoghq.com/bits_ai/mcp_server/setup
 
 # Overview
 
