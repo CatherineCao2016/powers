@@ -1,9 +1,9 @@
 ---
 name: "datadog"
-displayName: "Datadog Observability"
-description: "Query logs, metrics, traces, RUM events, incidents, and monitors from Datadog for production debugging and performance analysis"
-keywords: ["datadog", "observability", "monitoring", "logs", "metrics", "apm", "traces", "rum", "incidents"]
-author: "Datadog"
+description: "Query Datadog logs, metrics, APM traces, RUM events, incidents, monitors, services and dashboards through the Datadog MCP server for production debugging and performance analysis. Use when investigating production issues, analyzing performance or user experience, checking incidents and monitors, or looking up Datadog setup and documentation."
+metadata:
+  author: "Datadog"
+  version: "1.0.0"
 ---
 
 # Onboarding
@@ -26,10 +26,10 @@ The Datadog Observability Power provides comprehensive access to your Datadog mo
 
 **Authentication**: Requires Datadog API key and application key.
 
-## Available Steering Files
+## Related Skills
 
-This power has the following steering files:
-- **steering** - Comprehensive query syntax guide with examples, workflows, and troubleshooting
+This plugin has the following related skill:
+- **[datadog-query-syntax](../datadog-query-syntax/SKILL.md)** - Comprehensive query syntax guide with examples, workflows, and troubleshooting
 
 ## Available MCP Servers
 
@@ -604,7 +604,7 @@ tag:"service:api" status:alert
 ## Tips
 
 1. **Start narrow** - Use 15m-1h time ranges, expand if needed
-2. **Use steering file** - Comprehensive syntax guide with examples
+2. **Use the [datadog-query-syntax](../datadog-query-syntax/SKILL.md) skill** - Comprehensive syntax guide with examples
 3. **Check incidents first** - Active incidents often point to root cause
 4. **Leverage unified tags** - Always use service, env, version together
 5. **Search docs** - Use `search_datadog_docs` for setup questions
