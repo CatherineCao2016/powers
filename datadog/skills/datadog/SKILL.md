@@ -1,6 +1,6 @@
 ---
 name: "datadog"
-description: "Query Datadog logs, metrics, APM traces, RUM events, incidents, monitors, services and dashboards through the Datadog MCP server for production debugging and performance analysis. Use when investigating production issues, analyzing performance or user experience, checking incidents and monitors, or looking up Datadog setup and documentation."
+description: "Query Datadog logs, metrics, APM traces, RUM events, incidents, monitors, services and dashboards through the Datadog MCP server for production debugging and performance analysis. Use when investigating production issues, analyzing performance or user experience, or checking incidents and monitors."
 metadata:
   author: "Datadog"
   version: "1.0.0"
@@ -26,7 +26,6 @@ The Datadog Observability plugin provides comprehensive access to your Datadog m
 - **RUM**: Analyze user experience, page performance, and frontend errors
 - **Incidents**: Track and manage production incidents
 - **Monitors**: Search alerting rules and monitor status
-- **Documentation**: Look up Datadog setup, instrumentation, and best practices
 
 **Authentication**: OAuth 2.0 (recommended; your MCP client completes the login flow). A Datadog Personal or Service Access Token, or a Datadog API key and application key, can be used instead when OAuth is not possible. See [Configuration](#configuration).
 
@@ -105,10 +104,6 @@ This plugin has the following related skill:
     - Optional: `query` (string) - Dashboard search query
     - Optional: `max_queries_per_dashboard` (number) - Extract widget queries
     - Returns: Dashboards with metadata and widget queries
-
-11. **search_datadog_docs** - Search Datadog documentation
-    - Required: `query` (string) - Documentation search query
-    - Returns: Relevant documentation pages and guides
 
 ## Tool Usage Examples
 
@@ -519,7 +514,6 @@ tag:"service:api" status:alert
 - **Group similar logs** with `group_by_message: true`
 - **Set appropriate max_tokens** (5000 for overview, 50000 for details)
 - **Use extra_fields/custom_attributes** for custom data
-- **Leverage documentation search** for setup and instrumentation questions
 - **Check incidents first** when investigating issues
 
 ### ❌ Don't:
@@ -595,12 +589,11 @@ The US1-FED and US2-FED sites are not supported. For client-specific setup, tool
 2. **Use the [datadog-query-syntax](../datadog-query-syntax/SKILL.md) skill** - Comprehensive syntax guide with examples
 3. **Check incidents first** - Active incidents often point to root cause
 4. **Leverage unified tags** - Always use service, env, version together
-5. **Search docs** - Use `search_datadog_docs` for setup questions
-6. **Group logs** - Use `group_by_message` to reduce duplicate entries
-7. **Get full traces** - Use trace_id from spans to get complete picture
-8. **Monitor your monitors** - Check alert status during investigations
-9. **Analyze dependencies** - Use full traces to understand service relationships
-10. **Remember units** - Nanoseconds for spans, milliseconds for logs/RUM
+5. **Group logs** - Use `group_by_message` to reduce duplicate entries
+6. **Get full traces** - Use trace_id from spans to get complete picture
+7. **Monitor your monitors** - Check alert status during investigations
+8. **Analyze dependencies** - Use full traces to understand service relationships
+9. **Remember units** - Nanoseconds for spans, milliseconds for logs/RUM
 
 ---
 

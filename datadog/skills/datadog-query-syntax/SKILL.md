@@ -570,14 +570,6 @@ Step-by-step investigation examples (production errors, performance degradation,
 
 ## Additional Resources
 
-### Documentation Tool
-Use `search_datadog_docs` to look up information about instrumentation, setup, and platform functionality:
-- **Service instrumentation**: How to add APM tracing, log collection, or RUM to your applications
-- **Integration setup**: How to configure cloud providers, databases, or third-party services
-- **Platform features**: How to use monitors, dashboards, SLOs, synthetic tests, etc.
-- **Configuration options**: How to use APIs, agent settings, tagging strategies
-- **Best practices**: Recommended approaches for monitoring and observability
-
 ### Dashboard Analysis
 Use `search_datadog_dashboards` to:
 - Find existing dashboards by name or tags
