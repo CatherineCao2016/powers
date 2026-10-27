@@ -6,7 +6,7 @@ metadata:
   version: "1.0.0"
 ---
 
-# Datadog MCP Server Steering Guide
+# Datadog MCP Server Query Guide
 
 This skill provides comprehensive guidance for using the Datadog MCP (Model Context Protocol) server to query observability data including logs, metrics, traces, RUM events, incidents, and more.
 
